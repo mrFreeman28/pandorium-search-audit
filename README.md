@@ -44,7 +44,7 @@ Build the OpenAI ZIP below for a skills-only upload in the publisher workflow. I
 
 Before submission, confirm Apps Management Write access, verified publishing identity, the target surface's Python execution capability and portal scan results. If local script execution is unavailable, the skill provides a clearly labelled manual review and must not claim the deterministic helper ran. OpenAI's Claude-plugin conversion guidance advises contacting an OpenAI partner when core value requires local execution, arbitrary file access or offline operation.
 
-Skills-only submissions do not require MCP review cases or a demo recording. OpenAI portal validation and publication remain separate steps.
+Skills-only submissions do not require MCP review cases or a demo recording. OpenAI imported version 0.1.0 as a draft under verified Business — Pandorium Agency on 9 October 2026. Version 0.1.1 adds the published privacy-notice and support URLs. Skill scans, target-surface execution, formal review and publication remain separate checks.
 
 ## Verify and build
 
@@ -56,8 +56,8 @@ python3 scripts/verify_package.py
 
 Builds produce reproducible ignored archives:
 
-- `dist/pandorium-search-audit-openai-0.1.0.zip`
-- `dist/pandorium-search-audit-claude-0.1.0.zip`
+- `dist/pandorium-search-audit-openai-0.1.1.zip`
+- `dist/pandorium-search-audit-claude-0.1.1.zip`
 
 Each archive contains exactly five runtime files. Tests, marketplace catalog, build scripts, caches, raw snapshots and repository data are excluded. For native Claude validation, when already installed:
 
@@ -66,6 +66,10 @@ claude plugin validate --strict .
 ```
 
 The original helper and packaging code are available under the included [MIT License](LICENSE). The icon is the existing Pandorium brand asset. The public repository contains no client code, private agency memory, credentials or client data.
+
+## Support and privacy
+
+The [plugin privacy notice](PRIVACY.md) describes snapshot processing, recipients, retention and user controls. For help, contact **hello@pandoriumagency.com**; do not include credentials or confidential snapshots in a support request.
 
 ## Further reading
 

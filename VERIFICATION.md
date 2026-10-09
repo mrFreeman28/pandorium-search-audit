@@ -2,7 +2,7 @@
 
 Date: 2026-10-09
 
-Scope: local source and package acceptance for version 0.1.0. These checks do not establish native-host acceptance, a marketplace listing, traffic or client acquisition. The helper has no network call, MCP server, hook or credential dependency.
+Scope: local source and package acceptance for version 0.1.0, followed by the focused 0.1.1 metadata repair below. These checks do not establish model-session execution, a marketplace listing, traffic or client acquisition. The helper has no network call, MCP server, hook or credential dependency.
 
 ## Passed local checks
 
@@ -21,8 +21,17 @@ Scope: local source and package acceptance for version 0.1.0. These checks do no
 - OpenAI ZIP: `pandorium-search-audit-openai-0.1.0.zip`, 15,616 bytes, SHA-256 `527be375b2a0b856a4576efca44b55f0888070dff4bad017a379487612eaf3ee`.
 - Each ZIP contains exactly five allow-listed runtime files: its manifest, `LICENSE`, icon, `SKILL.md`, and offline helper. Tests, marketplace catalog, evidence, build scripts, caches, raw snapshots, and repository data are absent.
 
+## Version 0.1.1 metadata repair
+
+OpenAI imported the bound 0.1.0 ZIP as a draft under verified Business — Pandorium Agency on 9 October 2026. The portal's metadata check requested an accessible privacy-policy website. Version 0.1.1 adds public plugin-specific privacy and support URLs, increments both manifests and documents the notice. The helper, skill, icon, packaging and test code are unchanged.
+
+- Source/archive verifier: PASS for both 0.1.1 ZIPs. Independent fresh build, five-file membership and exact source-byte checks: PASS.
+- Claude Code 2.1.285 strict validation of the 0.1.1 plugin manifest: PASS. The isolated installation above tested 0.1.0; it was not repeated for this metadata-only change.
+- OpenAI ZIP: `pandorium-search-audit-openai-0.1.1.zip`, 15,679 bytes, SHA-256 `5e8cf37ab075b0ae28b4271dd2d6e41dffa131485941b4402f4c23d136687c89`.
+- Claude ZIP: `pandorium-search-audit-claude-0.1.1.zip`, 15,121 bytes, SHA-256 `8d54a1b4e00c75f6882cc08caa9136d9dd748d1b92414e0559ce887101c321cd`.
+
 ## Remaining platform checks
 
 - The bundled Skill Creator `quick_validate.py` could not run because its environment lacks PyYAML (`ModuleNotFoundError: yaml`). No dependency was installed. The package's standard-library verifier checks required frontmatter and unfinished-format invariants.
 - Native manifest validation and isolated installation are verified. Skill execution inside an authenticated Claude model session has not been tested; the offline helper was independently exercised from both extracted archives. Those checks do not establish Anthropic directory acceptance.
-- OpenAI portal validation, skill scans, target-surface Python availability, publisher identity, listing review and Anthropic directory review remain unverified. Public source availability is separate from acceptance or publication in either provider's official directory.
+- OpenAI publisher identity and initial draft import are verified. The 0.1.0 skill scan was still Checking when the privacy repair was prepared. Final metadata/skill scan results, target-surface Python availability, formal listing review/publication and Anthropic directory review remain unverified. Public source availability is separate from acceptance or publication in either provider's official directory.

@@ -1,7 +1,7 @@
 {
   "name": "pandorium-search-audit",
   "displayName": "Pandorium Search Audit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Audit supplied HTML and optional response-header and robots snapshots for evidence-backed search eligibility and on-page remediation priorities.",
   "author": {
     "name": "Pandorium Agency",

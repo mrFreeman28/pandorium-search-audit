@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pandorium-search-audit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Audit supplied HTML and optional response-header and robots snapshots for evidence-backed search eligibility and on-page remediation priorities.",
   "author": {
     "name": "Pandorium Agency",
@@ -37,7 +37,9 @@
           "Review these HTML, header, and robots snapshots for search blockers."
         ],
         "composerIcon": "./assets/pandorium-icon-orbit.svg",
-        "logo": "./assets/pandorium-icon-orbit.svg"
+        "logo": "./assets/pandorium-icon-orbit.svg",
+        "privacyPolicyURL": "https://github.com/mrFreeman28/pandorium-search-audit/blob/main/PRIVACY.md",
+        "supportURL": "https://github.com/mrFreeman28/pandorium-search-audit/blob/main/README.md#support-and-privacy"
       }
     }
   }
