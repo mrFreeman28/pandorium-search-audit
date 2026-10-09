@@ -1,0 +1,21 @@
+{
+  "name": "pandorium-search-audit",
+  "description": "Offline, evidence-labelled public-page search audit skill",
+  "owner": {
+    "name": "Pandorium Agency",
+    "url": "https://pandoriumagency.com"
+  },
+  "plugins": [
+    {
+      "name": "pandorium-search-audit",
+      "source": ".",
+      "description": "Audit supplied HTML, header, and robots snapshots without network access",
+      "category": "Developer Tools",
+      "tags": [
+        "seo",
+        "search-audit",
+        "html"
+      ]
+    }
+  ]
+}

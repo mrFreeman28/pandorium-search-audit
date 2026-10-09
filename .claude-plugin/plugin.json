@@ -1,0 +1,22 @@
+{
+  "name": "pandorium-search-audit",
+  "displayName": "Pandorium Search Audit",
+  "version": "0.1.0",
+  "description": "Audit supplied HTML and optional response-header and robots snapshots for evidence-backed search eligibility and on-page remediation priorities.",
+  "author": {
+    "name": "Pandorium Agency",
+    "url": "https://pandoriumagency.com"
+  },
+  "homepage": "https://pandoriumagency.com/guides/ai-search-optimization-audit/",
+  "repository": "https://github.com/mrFreeman28/pandorium-search-audit",
+  "license": "MIT",
+  "keywords": [
+    "search-audit",
+    "seo",
+    "html",
+    "robots",
+    "structured-data"
+  ],
+  "icon": "./assets/pandorium-icon-orbit.svg",
+  "documentationUrl": "https://pandoriumagency.com/guides/ai-search-optimization-audit/"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pandorium-search-audit",
+  "version": "0.1.0",
+  "description": "Audit supplied HTML and optional response-header and robots snapshots for evidence-backed search eligibility and on-page remediation priorities.",
+  "author": {
+    "name": "Pandorium Agency",
+    "url": "https://pandoriumagency.com"
+  },
+  "homepage": "https://pandoriumagency.com/guides/ai-search-optimization-audit/",
+  "repository": "https://github.com/mrFreeman28/pandorium-search-audit",
+  "license": "MIT",
+  "keywords": [
+    "search-audit",
+    "seo",
+    "html",
+    "robots",
+    "structured-data"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Pandorium Search Audit",
+        "shortDescription": "Offline HTML search checks",
+        "longDescription": "Audit a user-supplied HTML snapshot, canonical source URL, and optional response-header and robots.txt snapshots. The bundled offline helper checks directive eligibility, canonical resolution, core page metadata, headings, JSON-LD parsing and types, selected-crawler robots rules, same-origin links, and CTA evidence. Results distinguish observed failures from missing evidence and do not claim live indexing, rankings, AI citations, keyword demand, runtime behavior, or revenue impact.",
+        "developerName": "Pandorium Agency",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Audit supplied HTML snapshots without network access",
+          "Check search directives and canonical resolution",
+          "Inspect metadata, headings, JSON-LD, links, and CTA evidence",
+          "Return bounded JSON and actionable Markdown findings"
+        ],
+        "websiteURL": "https://pandoriumagency.com/guides/ai-search-optimization-audit/",
+        "defaultPrompt": [
+          "Audit my HTML snapshot for search eligibility and remediation priorities.",
+          "Review these HTML, header, and robots snapshots for search blockers."
+        ],
+        "composerIcon": "./assets/pandorium-icon-orbit.svg",
+        "logo": "./assets/pandorium-icon-orbit.svg"
+      }
+    }
+  }
+}
