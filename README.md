@@ -29,6 +29,8 @@ Results describe supplied snapshots. They do not verify current indexing, rankin
 
 ## Claude Code
 
+The plugin itself is free, and the offline helper above does not require a Claude subscription. Running it inside Claude Code requires an eligible Claude account: Pro or Max for individual subscription access, or an approved Team/Enterprise or separately billed provider route. Max is not mandatory; Claude Free does not provide individual subscription access to Claude Code. Use the same account that holds the existing paid plan. See [Claude Code subscription access](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan).
+
 The repository provides a marketplace catalog with one skills-only plugin. With a current Claude Code installation:
 
 ```text
