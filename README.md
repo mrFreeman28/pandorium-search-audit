@@ -38,7 +38,7 @@ claude plugin marketplace add mrFreeman28/pandorium-search-audit
 claude plugin install pandorium-search-audit@pandorium-search-audit
 ```
 
-Ask Claude to audit your saved page snapshot using Pandorium Search Audit. The skill resolves its bundled helper within the installed skill directory. Both manifests passed strict validation in Claude Code 2.1.285; marketplace add, installation and enabled-plugin listing from this public repository passed in an isolated temporary configuration. No model session was invoked. Python execution still depends on the host environment. See [VERIFICATION.md](VERIFICATION.md). Older Claude versions may reject newer listing metadata fields.
+Ask Claude to audit your saved page snapshot using Pandorium Search Audit. The skill resolves its bundled helper within the loaded skill directory. Both 0.1.1 manifests passed strict validation in Claude Code 2.1.285; the earlier isolated marketplace add, installation and enabled-plugin listing tested version 0.1.0. Native version 0.1.1 now passes three local model conversations through a session-only plugin load: direct and indirect activation, four real helper executions and eight reports matching independent baselines byte for byte. A separate execution-disabled session correctly used a labelled manual review; an actual Python-absent host was not tested. Python execution still depends on the host. Provider-host processing and retention are separate from the offline helper; see [PRIVACY.md](PRIVACY.md) and [VERIFICATION.md](VERIFICATION.md). Older Claude versions may reject newer listing metadata fields.
 
 ## ChatGPT / Codex
 

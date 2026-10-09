@@ -2,7 +2,7 @@
 
 Date: 2026-10-09
 
-Scope: local source and package acceptance for version 0.1.0, followed by the focused 0.1.1 metadata repair below. The original checks did not establish model-session execution; the later native Codex local proof is recorded below. None establishes a marketplace listing, traffic or client acquisition. The helper has no network call, MCP server, hook or credential dependency.
+Scope: local source and package acceptance for version 0.1.0, followed by the focused 0.1.1 metadata repair below. The original checks did not establish model-session execution; the later native Codex and Claude local proofs are recorded below. None establishes a marketplace listing, traffic or client acquisition. The helper has no network call, MCP server, hook or credential dependency.
 
 ## Passed local checks
 
@@ -33,8 +33,8 @@ OpenAI imported the bound 0.1.0 ZIP as a draft under verified Business — Pando
 ## Remaining platform checks
 
 - The bundled Skill Creator `quick_validate.py` could not run because its environment lacks PyYAML (`ModuleNotFoundError: yaml`). No dependency was installed. The package's standard-library verifier checks required frontmatter and unfinished-format invariants.
-- Native manifest validation and isolated installation are verified. Skill execution inside an authenticated Claude model session has not been tested; the offline helper was independently exercised from both extracted archives. Those checks do not establish Anthropic directory acceptance.
-- OpenAI publisher identity, 0.1.1 draft import and automated metadata/skill checks are verified. The official local/offline-execution partner-contact condition is unresolved; Python execution has now passed on Codex this-computer/local only; ChatGPT web/mobile, hosted environments, formal listing review/publication and Anthropic directory review remain unverified. Review is Not submitted and publication is Not published. No legal-attestation checkbox was selected or final Submit action performed. Public source availability is separate from acceptance or publication in either provider's official directory.
+- Native manifest validation and the earlier isolated 0.1.0 installation are verified. Exact 0.1.1 native local model execution now passes through session-only plugin loading, as recorded below. Those checks do not establish Anthropic directory acceptance.
+- OpenAI publisher identity, 0.1.1 draft import and automated metadata/skill checks are verified. The official local/offline-execution partner-contact condition is unresolved; Python execution has now passed on Codex and Claude Code this-computer/local; ChatGPT web/mobile, hosted environments, formal listing review/publication and Anthropic directory review remain unverified. Review is Not submitted and publication is Not published. No legal-attestation checkbox was selected or final Submit action performed. Public source availability is separate from acceptance or publication in either provider's official directory.
 
 ## Version 0.1.1 runtime checkpoint
 
@@ -42,6 +42,14 @@ Independent fresh extraction of both final archives on Python 3.9.6 passed compl
 
 Native Codex CLI using existing ChatGPT authentication recognized an exact runtime-only copy as installed and enabled in a local QA marketplace. Two ephemeral model conversations performed direct and indirect skill activation and four real Python 3.9.6 helper runs from the installed cache. Eight JSON/Markdown files matched independent helper baselines byte for byte. Model responses kept actual indexing/citations/leads unknown; a URL-only case did not fabricate an audit, and an unrelated translation within a batch did not trigger another audit or promotion. Primary user configuration remained byte-identical; the QA override was transient. This proves this-computer/local Codex execution, not ChatGPT web/mobile, every host/operating system or official directory acceptance.
 
-The Python-unavailable fallback has only instruction-contract inspection, not a real no-Python host run. Native Claude model execution remains untested. The unchanged helper reports internal version 0.1.0; package version 0.1.1 is a metadata/privacy patch. No runtime code, archive bytes or imported draft changed for this checkpoint.
+An actual Python-absent host remains untested. Claude now has an observed execution-disabled tool-surface fallback, described below; this is narrower than a no-Python-host certification. The unchanged helper reports internal version 0.1.0; package version 0.1.1 is a metadata/privacy patch. No runtime code, archive bytes or imported draft changed for this checkpoint.
 
 OpenAI Support has been contacted through its documented authenticated chat route and the local-execution review question escalated to a human specialist. Human response/clearance remains pending. Automated scans are passing; formal review remains unsubmitted and the directory plugin unpublished. No legal assurances were accepted or final submission performed.
+
+## Native Claude local runtime acceptance — 9 October 2026
+
+Claude Code 2.1.285, using existing eligible subscription authentication and actual model `claude-opus-5-5`, loaded the exact five runtime files from the bound Claude 0.1.1 archive through session-only `--plugin-dir`. Three synthetic conversations covered direct activation with complete/blocked/malformed snapshots and follow-up requests, an independent indirect request that named no plugin, and execution-disabled manual fallback. Four actual Python helper calls produced eight JSON/Markdown files byte-identical to independent extracted-archive baselines. Responses kept actual indexing, rankings, citations and leads unknown, refused a URL-only fabricated audit and answered an unrelated translation without promotion.
+
+The fallback exposed Skill and Read only. It explicitly disclosed manual inspection, unexecuted helper parsing/limits/robots evaluator/structured output, and did not claim Python was absent from the host. No additional web/MCP actions were observed; this is not syscall-level network monitoring or a promise that a provider-hosted model never processes selected snapshots. Host processing and retention remain covered by [PRIVACY.md](PRIVACY.md).
+
+Protected user configuration remained semantically identical and three other configuration files remained byte-identical. Claude updated its runtime usage/cache bookkeeping; raw runtime-state bytes did change. An initial narrow-permission denial was retained as diagnostic, corrected in test command instructions without changing source or permissions, and excluded from passing execution counts. No persistent plugin install, new billing plan, runtime/archive change, hosted-surface certification or official directory publication occurred.
