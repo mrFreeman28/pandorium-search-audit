@@ -2,7 +2,7 @@
 
 Date: 2026-10-09
 
-Scope: local source and package acceptance for version 0.1.0, followed by the focused 0.1.1 metadata repair below. These checks do not establish model-session execution, a marketplace listing, traffic or client acquisition. The helper has no network call, MCP server, hook or credential dependency.
+Scope: local source and package acceptance for version 0.1.0, followed by the focused 0.1.1 metadata repair below. The original checks did not establish model-session execution; the later native Codex local proof is recorded below. None establishes a marketplace listing, traffic or client acquisition. The helper has no network call, MCP server, hook or credential dependency.
 
 ## Passed local checks
 
@@ -34,4 +34,14 @@ OpenAI imported the bound 0.1.0 ZIP as a draft under verified Business — Pando
 
 - The bundled Skill Creator `quick_validate.py` could not run because its environment lacks PyYAML (`ModuleNotFoundError: yaml`). No dependency was installed. The package's standard-library verifier checks required frontmatter and unfinished-format invariants.
 - Native manifest validation and isolated installation are verified. Skill execution inside an authenticated Claude model session has not been tested; the offline helper was independently exercised from both extracted archives. Those checks do not establish Anthropic directory acceptance.
-- OpenAI publisher identity, 0.1.1 draft import and automated metadata/skill checks are verified. The official local/offline-execution partner-contact condition is unresolved; target-surface Python availability, formal listing review/publication and Anthropic directory review remain unverified. Review is Not submitted and publication is Not published. No legal-attestation checkbox was selected or final Submit action performed. Public source availability is separate from acceptance or publication in either provider's official directory.
+- OpenAI publisher identity, 0.1.1 draft import and automated metadata/skill checks are verified. The official local/offline-execution partner-contact condition is unresolved; Python execution has now passed on Codex this-computer/local only; ChatGPT web/mobile, hosted environments, formal listing review/publication and Anthropic directory review remain unverified. Review is Not submitted and publication is Not published. No legal-attestation checkbox was selected or final Submit action performed. Public source availability is separate from acceptance or publication in either provider's official directory.
+
+## Version 0.1.1 runtime checkpoint
+
+Independent fresh extraction of both final archives on Python 3.9.6 passed complete/missing optional evidence, header noindex plus selected-crawler blocking, malformed JSON-LD/missing canonical, explicit JSON/Markdown output, private-marker suppression and deterministic-rerun cases. Identical inputs produced identical reports across both packages; inputs/package bytes were unchanged.
+
+Native Codex CLI using existing ChatGPT authentication recognized an exact runtime-only copy as installed and enabled in a local QA marketplace. Two ephemeral model conversations performed direct and indirect skill activation and four real Python 3.9.6 helper runs from the installed cache. Eight JSON/Markdown files matched independent helper baselines byte for byte. Model responses kept actual indexing/citations/leads unknown; a URL-only case did not fabricate an audit, and an unrelated translation within a batch did not trigger another audit or promotion. Primary user configuration remained byte-identical; the QA override was transient. This proves this-computer/local Codex execution, not ChatGPT web/mobile, every host/operating system or official directory acceptance.
+
+The Python-unavailable fallback has only instruction-contract inspection, not a real no-Python host run. Native Claude model execution remains untested. The unchanged helper reports internal version 0.1.0; package version 0.1.1 is a metadata/privacy patch. No runtime code, archive bytes or imported draft changed for this checkpoint.
+
+OpenAI Support has been contacted through its documented authenticated chat route and the local-execution review question escalated to a human specialist. Human response/clearance remains pending. Automated scans are passing; formal review remains unsubmitted and the directory plugin unpublished. No legal assurances were accepted or final submission performed.
