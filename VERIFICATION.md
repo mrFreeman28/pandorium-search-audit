@@ -23,7 +23,7 @@ Scope: local source and package acceptance for version 0.1.0, followed by the fo
 
 ## Version 0.1.1 metadata repair
 
-OpenAI imported the bound 0.1.0 ZIP as a draft under verified Business — Pandorium Agency on 9 October 2026. The portal's metadata check requested an accessible privacy-policy website. Version 0.1.1 adds public plugin-specific privacy and support URLs, increments both manifests and documents the notice. The helper, skill, icon, packaging and test code are unchanged.
+OpenAI imported the bound 0.1.0 ZIP as a draft under verified Business — Pandorium Agency on 9 October 2026. The portal's metadata check requested an accessible privacy-policy website. Version 0.1.1 adds public plugin-specific privacy and support URLs, increments both manifests and documents the notice. The helper, skill, icon, packaging and test code are unchanged. The replacement was imported into the same unsubmitted draft; its skill shows Checks passed and metadata shows No Issues / No issues found with the plugin’s metadata and skills.
 
 - Source/archive verifier: PASS for both 0.1.1 ZIPs. Independent fresh build, five-file membership and exact source-byte checks: PASS.
 - Claude Code 2.1.285 strict validation of the 0.1.1 plugin manifest: PASS. The isolated installation above tested 0.1.0; it was not repeated for this metadata-only change.
@@ -34,4 +34,4 @@ OpenAI imported the bound 0.1.0 ZIP as a draft under verified Business — Pando
 
 - The bundled Skill Creator `quick_validate.py` could not run because its environment lacks PyYAML (`ModuleNotFoundError: yaml`). No dependency was installed. The package's standard-library verifier checks required frontmatter and unfinished-format invariants.
 - Native manifest validation and isolated installation are verified. Skill execution inside an authenticated Claude model session has not been tested; the offline helper was independently exercised from both extracted archives. Those checks do not establish Anthropic directory acceptance.
-- OpenAI publisher identity and initial draft import are verified. The 0.1.0 skill scan was still Checking when the privacy repair was prepared. Final metadata/skill scan results, target-surface Python availability, formal listing review/publication and Anthropic directory review remain unverified. Public source availability is separate from acceptance or publication in either provider's official directory.
+- OpenAI publisher identity, 0.1.1 draft import and automated metadata/skill checks are verified. The official local/offline-execution partner-contact condition is unresolved; target-surface Python availability, formal listing review/publication and Anthropic directory review remain unverified. Review is Not submitted and publication is Not published. No legal-attestation checkbox was selected or final Submit action performed. Public source availability is separate from acceptance or publication in either provider's official directory.

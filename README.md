@@ -44,7 +44,7 @@ Build the OpenAI ZIP below for a skills-only upload in the publisher workflow. I
 
 Before submission, confirm Apps Management Write access, verified publishing identity, the target surface's Python execution capability and portal scan results. If local script execution is unavailable, the skill provides a clearly labelled manual review and must not claim the deterministic helper ran. OpenAI's Claude-plugin conversion guidance advises contacting an OpenAI partner when core value requires local execution, arbitrary file access or offline operation.
 
-Skills-only submissions do not require MCP review cases or a demo recording. OpenAI imported version 0.1.0 as a draft under verified Business — Pandorium Agency on 9 October 2026. Version 0.1.1 adds the published privacy-notice and support URLs. Skill scans, target-surface execution, formal review and publication remain separate checks.
+Skills-only submissions do not require MCP review cases or a demo recording. OpenAI imported version 0.1.0 as a draft under verified Business — Pandorium Agency on 9 October 2026. Version 0.1.1 adds the published privacy-notice and support URLs; the replacement draft passed the platform's metadata and skill checks. The local/offline-execution review route, target-surface execution, formal review and publication remain separate checks. The plugin has not been submitted for review or published in the OpenAI directory.
 
 ## Verify and build
 
