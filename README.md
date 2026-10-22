@@ -42,11 +42,19 @@ Ask Claude to audit your saved page snapshot using Pandorium Search Audit. The s
 
 ## ChatGPT / Codex
 
-Build the OpenAI ZIP below for a skills-only upload in the publisher workflow. It contains portable `plugin.json`, this skill's runtime, the license and icon. This repository is not an accepted OpenAI directory listing.
+A Git marketplace source is available for supported Codex/ChatGPT desktop clients. Add this source with a current Codex CLI:
 
-Before submission, confirm Apps Management Write access, verified publishing identity, the target surface's Python execution capability and portal scan results. If local script execution is unavailable, the skill provides a clearly labelled manual review and must not claim the deterministic helper ran. OpenAI's Claude-plugin conversion guidance advises contacting an OpenAI partner when core value requires local execution, arbitrary file access or offline operation.
+```sh
+codex plugin marketplace add mrFreeman28/pandorium-search-audit --ref codex/direct-marketplace-terms-013-2026-10-22
+```
 
-Skills-only submissions do not require MCP review cases or a demo recording. OpenAI imported version 0.1.0 as a draft under verified Business — Pandorium Agency on 9 October 2026. Version 0.1.1 adds the published privacy-notice and support URLs; the replacement draft passed the platform's metadata and skill checks. Native Codex this-computer/local execution has now passed direct and indirect activation using the installed runtime and Python 3.9.6, with byte-exact independent report comparisons. ChatGPT web/mobile and hosted execution are not certified. The local/offline review question has been escalated to an OpenAI support specialist; human clearance, formal review and publication remain separate checks. The plugin has not been submitted for review or published in the OpenAI directory.
+Then open the desktop Plugins Directory, choose **Pandorium Search Audit** as the marketplace source, and install the plugin. See [direct installation, ref pinning and scope](CODEX-DISTRIBUTION.md). This repository source is separate from the universal public Directory; adding a marketplace does not grant Directory acceptance or hosted execution.
+
+Version 0.1.3 declares `requires_local_executor: true` and links the [plugin-specific Terms of Use](https://pandoriumagency.com/plugins/search-audit/terms/). The skill, offline helper, icon, MIT License and data-processing behavior are unchanged from the accepted runtime. Claude's existing marketplace catalog is unchanged; both manifest version labels are aligned to 0.1.3.
+
+As of 22 October 2026, the existing OpenAI publisher draft retains 0.1.3 and the canonical Terms URL, and the skill shows Checks passed. The missing Terms URL finding is resolved. The portal still reports: “We are not accepting more skills-only submissions at this time.” The plugin has not been submitted for review or published in the universal Directory.
+
+Previous native Codex local execution used version 0.1.1 and Python 3.9.6, with direct and indirect activation and byte-exact independent report comparisons. Those runtime results are retained, not rerun here. The new Git-source installation has not been executed in this step, and ChatGPT web/mobile or hosted Python execution is not certified. If local execution is unavailable, the skill must label a manual review and must not claim the deterministic helper ran. See [verification scope](VERIFICATION.md).
 
 ## Verify and build
 
@@ -58,8 +66,8 @@ python3 scripts/verify_package.py
 
 Builds produce reproducible ignored archives:
 
-- `dist/pandorium-search-audit-openai-0.1.1.zip`
-- `dist/pandorium-search-audit-claude-0.1.1.zip`
+- `dist/pandorium-search-audit-openai-0.1.3.zip`
+- `dist/pandorium-search-audit-claude-0.1.3.zip`
 
 Each archive contains exactly five runtime files. Tests, marketplace catalog, build scripts, caches, raw snapshots and repository data are excluded. For native Claude validation, when already installed:
 
