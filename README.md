@@ -29,16 +29,24 @@ Results describe supplied snapshots. They do not verify current indexing, rankin
 
 ## Claude Code
 
-The plugin itself is free, and the offline helper above does not require a Claude subscription. Running it inside Claude Code requires an eligible Claude account: Pro or Max for individual subscription access, or an approved Team/Enterprise or separately billed provider route. Max is not mandatory; Claude Free does not provide individual subscription access to Claude Code. Use the same account that holds the existing paid plan. See [Claude Code subscription access](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan).
+The plugin itself is free, and the offline helper above does not require a Claude subscription. Running it inside Claude Code requires an eligible Claude account: Pro, Max, or Ultra for individual subscription access, or an approved Team/Enterprise or separately billed provider route. Max is not mandatory; Claude Free does not provide individual subscription access to Claude Code. Use the same account that holds the existing paid plan. See [Claude Code subscription access](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan).
 
 The repository provides a marketplace catalog with one skills-only plugin. With a current Claude Code installation:
 
 ```text
-claude plugin marketplace add mrFreeman28/pandorium-search-audit
+claude plugin marketplace add 'mrFreeman28/pandorium-search-audit#codex/direct-marketplace-terms-013-2026-10-22'
 claude plugin install pandorium-search-audit@pandorium-search-audit
 ```
 
-Ask Claude to audit your saved page snapshot using Pandorium Search Audit. The skill resolves its bundled helper within the loaded skill directory. Both 0.1.1 manifests passed strict validation in Claude Code 2.1.285; the earlier isolated marketplace add, installation and enabled-plugin listing tested version 0.1.0. Native version 0.1.1 now passes three local model conversations through a session-only plugin load: direct and indirect activation, four real helper executions and eight reports matching independent baselines byte for byte. A separate execution-disabled session correctly used a labelled manual review; an actual Python-absent host was not tested. Python execution still depends on the host. Provider-host processing and retention are separate from the offline helper; see [PRIVACY.md](PRIVACY.md) and [VERIFICATION.md](VERIFICATION.md). Older Claude versions may reject newer listing metadata fields.
+Ask Claude to audit your saved page snapshot using Pandorium Search Audit. The skill resolves its bundled helper within the loaded skill directory. Both 0.1.1 manifests passed strict validation in Claude Code 2.1.285; the earlier isolated marketplace add, installation and enabled-plugin listing tested version 0.1.0. Native version 0.1.1 now passes three local model conversations through a session-only plugin load: direct and indirect activation, four real helper executions and eight reports matching independent baselines byte for byte. A separate execution-disabled session correctly used a labelled manual review; an actual Python-absent host was not tested. Python execution still depends on the host. Provider-host processing and retention are separate from the offline helper; see [PRIVACY.md](PRIVACY.md) and [VERIFICATION.md](VERIFICATION.md). Older Claude versions may reject newer listing metadata fields. Version 0.1.3 was tested in a local Claude Desktop Code session. The installed skill ran the bundled helper once on synthetic HTML and produced JSON and Markdown reports.
+
+## Three sample audits
+
+Use these synthetic files from the repository root with Claude Code. Each example uses an `example.invalid` URL as an identifier and runs on the supplied files.
+
+1. **Find HTML indexing blockers.** “Use Pandorium Search Audit to review `examples/noindex.html` for `https://example.invalid/search-audit-test/`. Report the most important fixes.” The report should flag the HTML `noindex` directive and missing title. It should leave HTTP status and robots.txt access unknown.
+2. **Find a blocker in HTTP headers.** “Audit `examples/services.html` with `examples/noindex.headers.txt` for `https://example.invalid/services/`. Tell me whether the supplied headers affect indexing eligibility.” The report should find `X-Robots-Tag: noindex` in the header snapshot.
+3. **Check crawling for Googlebot.** “Audit `examples/services.html` with `examples/robots.txt` for `https://example.invalid/services/`. Evaluate access for Googlebot.” The report should flag the matching robots.txt rule that blocks Googlebot from that path.
 
 ## ChatGPT / Codex
 

@@ -2,7 +2,7 @@
 
 Effective date: 2026-10-09.
 Publisher: Pandorium Agency.
-This notice describes Pandorium Search Audit version 0.1.1.
+This notice describes Pandorium Search Audit version 0.1.3. The data handling described here is unchanged from version 0.1.1.
 
 ## What the plugin processes and why
 
@@ -12,7 +12,7 @@ Snapshots and URLs can contain page text, embedded personal information or ident
 
 ## Recipients and network activity
 
-The bundled helper has no network client, server, analytics, cookies, form submission or credential integration. It does not transmit snapshots or reports to Pandorium Agency or another service. It emits a bounded report in the environment where it runs. The model host may process the conversation and uploaded files under its own terms, privacy controls and retention practices; those provider practices are outside this helper's control.
+The bundled helper has no network client, server, analytics, cookies, form submission or credential integration. It does not transmit snapshots or reports to Pandorium Agency or another service. It emits a bounded report in the environment where it runs. The model host may process the conversation and uploaded files under its own terms, privacy controls and retention practices; those provider practices are outside this helper's control. See the [Anthropic Privacy Policy](https://www.anthropic.com/legal/privacy) for Claude.
 
 If the user authorizes an available read-only route to obtain a public-page snapshot, that route and its provider have their own data practices. The plugin does not add a network dependency or authorize a new connector. Visiting a linked guide or contacting support is a separate interaction under the relevant website or support policy.
 
