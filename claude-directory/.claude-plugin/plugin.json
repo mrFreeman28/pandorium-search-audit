@@ -1,0 +1,16 @@
+{
+  "name": "pandorium-search-audit",
+  "displayName": "Pandorium Search Audit",
+  "version": "0.1.4",
+  "description": "Review pasted HTML, HTTP headers, and robots.txt excerpts for search eligibility issues and prioritized on-page fixes.",
+  "author": {
+    "name": "Pandorium Agency",
+    "email": "hello@pandoriumagency.com",
+    "url": "https://pandoriumagency.com"
+  },
+  "repository": "https://github.com/mrFreeman28/pandorium-search-audit",
+  "license": "MIT",
+  "keywords": ["search-audit", "seo", "html", "robots"],
+  "icon": "./assets/pandorium-icon-orbit.svg",
+  "privacyPolicyUrl": "https://github.com/mrFreeman28/pandorium-search-audit/blob/codex/claude-directory-014-20261106/claude-directory/PRIVACY.md"
+}
